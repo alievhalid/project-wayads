@@ -1,0 +1,33 @@
+{
+  "ads": {
+    "name": "",
+    "price": 1000,
+    "description": "",
+    "category": "одноразовая",
+    "address": "Грозный",
+    "images": ["dasdasadsda", "dasdasdasad", "sadasddasadsda"],
+    "date": "2018-01-01"
+  },
+  "specialist": {
+    "name": "Халид",
+    "surname": "Алиев",
+    "email": "s7600180@gmail.com",
+    "password": "aleivhalid9559",
+    "address": "Грозный",
+    "projects": 1,
+    "number": "+7 963-397-16-74",
+    "level": 42,
+    "rating": 0,
+    "social": ["facebook", "telegram", "vkontakte"],
+    "date": "2018-01-01",
+    "confirmed": false
+  },
+  "users": {
+    "name": "Иван",
+    "surname": "Иванов",
+    "email": "s7600180@gmail.com",
+    "password": "aleivhalid9559",
+    "address": "Грозный",
+    "date": "2018-01-01"
+  }
+}

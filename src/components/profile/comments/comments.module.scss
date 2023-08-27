@@ -1,0 +1,43 @@
+.comments {
+  max-height: 700px;
+  margin: 0 auto;
+
+  margin-top: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+  .comment {
+    width: 400px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .info {
+    margin-left: 10px;
+    span {
+      margin: 5px 0;
+      font-size: 12px;
+      color: grey;
+      font-weight: 600;
+    }
+  }
+  .name {
+    width: 200px;
+    color: #3498db;
+    font-weight: 600;
+  }
+  .logo {
+    margin-top: 10px;
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+}
+.rating {
+  margin-top: 15px;
+  color: orange;
+  font-size: 20px;
+}

@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.MuiBox-root {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1%;
+}
+.bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.bottom-right {
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-right a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.tg {
+  font-size: 22px;
+  padding: 5px 8px 5px 5px;
+  border-radius: 100%;
+  background-color: #27a5e6;
+  color: #fff;
+}
+.scroll-to-top-button  {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 305px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #27a5e6;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 15px;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}

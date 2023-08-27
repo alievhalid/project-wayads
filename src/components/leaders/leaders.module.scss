@@ -1,0 +1,67 @@
+.leadersListWrapper {
+    position: absolute;
+    right: -25%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersListWrapper h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList li {
+    margin-bottom: 5px;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList li:last-child {
+    margin-bottom: 0;
+  }
+  .centeredLeader {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leaderPhoto {
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList li {
+    margin-bottom: 5px;
+    /* Добавь другие стили по своему усмотрению */
+  }
+  
+  .leadersList li:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  
+  

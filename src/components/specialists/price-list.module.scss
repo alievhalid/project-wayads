@@ -1,0 +1,45 @@
+.price-list {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .price-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .price-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .price-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .price-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .price-list p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .price-list ul ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .price-list ul ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }

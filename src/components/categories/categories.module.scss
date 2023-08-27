@@ -1,0 +1,15 @@
+.wrap {
+    border: solid 1px red;
+    display: flex;
+    max-width: 1150px;
+    height: 300px;
+    flex-wrap: wrap;
+    div {
+        width: 100px;
+        height: 70px;
+        border: solid 1px blue;
+        margin: 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+}

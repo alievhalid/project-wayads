@@ -1,0 +1,30 @@
+.content {
+  width: 1110px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  height: 350px;
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1613517297_54-p-foni-dlya-delovoi-prezentatsii-tema-obrazo-62.jpg");
+  background-size: cover;
+  .text {
+    width: 700px;
+    padding: 10px;
+    font-family: "Caveat", cursive;
+    color: #000;
+  }
+  .oneText {
+    width: 350px;
+    font-size: 86px;
+  }
+  .twoText {
+    font-size: 86px;
+    text-align: center;
+  }
+  .threeText {
+    font-size: 86px;
+    text-align: right;
+  }
+}
+

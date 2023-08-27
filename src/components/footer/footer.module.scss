@@ -1,0 +1,22 @@
+.footer {
+  max-width: 1110px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  background-color: #292929;
+  border-radius: 5px;
+  color: #fff;
+  ul {
+    width: 200px;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+    li {
+      margin: 0;
+      margin-bottom: 10px;
+      list-style-type: none;
+    }
+  }
+}

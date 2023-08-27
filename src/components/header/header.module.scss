@@ -1,0 +1,70 @@
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .nav {
+    padding: 10px 20px;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #292929;
+    color: #fff;
+    .noActive {
+      border-bottom: 3px solid #292929;
+    }
+
+    div {
+      font-size: 14px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 45px;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+
+  .logo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    font-family: "Shizuru", cursive;
+    color: #fff;
+    font-size: 28px !important;
+    border-bottom: none;
+    margin-bottom: 10px;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    border: solid 1px red;
+    display: inline-block;
+  }
+  .nav div {
+    display: none;
+  }
+  .header {
+    display:inline;
+  }
+}
+
+.active {
+  border-bottom: 3px solid orange;
+}
