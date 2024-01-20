@@ -7,7 +7,7 @@ import Favorite from "@mui/icons-material/Favorite";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AddCard from "./add-card/AddCard";
 import Filter from "../filter/Filter";
-import Leaders from "../leaders/Leaders";
+// import Leaders from "../leaders/Leaders";
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 function Cards() {
@@ -134,14 +134,12 @@ function Cards() {
   const [loading, setLoading] = useState(false)
   return (
     <div className={styles.main}>
-      <Leaders />
+      {/* <Leaders /> */}
       <div>
         <div className={styles["add-card"]}>
-          <div className={styles.search}>
-            <input type="text" placeholder="Поиск по объявлениям" />
-            <div>
-              Найти
-            </div>
+            <div className={styles.search}>
+              <input placeholder="Введите текст." type="text"></input>
+              <button type="submit">найти</button>
           </div>
           <Filter />
           <div>

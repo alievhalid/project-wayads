@@ -18,10 +18,10 @@ function Header() {
           )}
         </NavLink>
         <NavLink to="/about">
-                  {({ isActive }) => (
-                    <div className={isActive? styles.active : styles.noActive}>о нас</div>
-                  )}
-                </NavLink>
+          {({ isActive }) => (
+            <div className={isActive ? styles.active : styles.noActive}>о нас</div>
+          )}
+        </NavLink>
         <NavLink to="/specialists">
           {({ isActive }) => (
             <div className={isActive ? styles.active : styles.noActive}><s>Специалисты</s></div>

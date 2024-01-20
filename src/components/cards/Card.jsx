@@ -7,7 +7,6 @@ import user from "../../images/user.svg";
 import location from "../../images/location.svg";
 import Maps from "./map/Map";
 import Carousel from "./Carousel";
-import { useEffect } from "react";
 // import { AiFillStar } from "react-icons/ai";
 function Card() {
   // let level = 42;

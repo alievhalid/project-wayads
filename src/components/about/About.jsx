@@ -21,6 +21,12 @@ function About() {
                         решить все ваши бытовые проблемы быстро и качественно.</p>
                 </section>
             </main>
+            {/* <h2>площадка доступна на всех видах устройств</h2>
+            <div className={styles.container}>
+                <div className={styles.loader}></div>
+                <div className={styles.loader}></div>
+                <div className={styles.loader}></div>
+            </div> */}
         </div>
     )
 }

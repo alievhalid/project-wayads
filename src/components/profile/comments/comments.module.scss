@@ -1,11 +1,11 @@
 .comments {
   max-height: 700px;
   margin: 0 auto;
-
   margin-top: 20px;
   justify-content: space-around;
   padding: 10px;
   box-sizing: border-box;
+
   .comment {
     width: 400px;
     display: flex;
@@ -14,8 +14,10 @@
     border-radius: 5px;
     margin: 10px;
   }
+
   .info {
     margin-left: 10px;
+
     span {
       margin: 5px 0;
       font-size: 12px;
@@ -23,21 +25,66 @@
       font-weight: 600;
     }
   }
+
   .name {
     width: 200px;
     color: #3498db;
     font-weight: 600;
   }
+
   .logo {
     margin-top: 10px;
+
     img {
       width: 50px;
       border-radius: 50%;
     }
   }
 }
+
 .rating {
-  margin-top: 15px;
+  margin-top: 10px;
   color: orange;
   font-size: 20px;
+}
+
+.reviewsInput textarea {
+  width: 400px;
+}
+
+.reviewsInput {
+  button {
+    margin-top: 15px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+
+  button:hover span {
+    transform: translateX(7px);
+  }
 }

@@ -22,6 +22,7 @@
     text-transform: uppercase;
     background-color: #292929;
     color: #fff;
+
     .noActive {
       border-bottom: 3px solid #292929;
     }
@@ -57,11 +58,13 @@
     border: solid 1px red;
     display: inline-block;
   }
+
   .nav div {
     display: none;
   }
+
   .header {
-    display:inline;
+    display: inline;
   }
 }
 
