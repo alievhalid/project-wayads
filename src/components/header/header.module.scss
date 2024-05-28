@@ -1,73 +1,76 @@
 .header {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
   font-family: 'Lato', sans-serif;
   position: fixed;
+  height: 40px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  background-color: #292929;
+  padding-top: 15px;;
 
   .nav {
-    padding: 10px 20px;
-    max-width: 1110px;
+    padding: 5px 20px;
+    width: 1175px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 50px;
     align-items: center;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
     text-transform: uppercase;
-    background-color: #292929;
     color: #fff;
 
-    .noActive {
-      border-bottom: 3px solid #292929;
-    }
-
     div {
-      font-size: 14px;
-      padding: 10px;
+      height: 20px;
+      font-size: 12px;
       cursor: pointer;
+      padding: 0 10px;
+      
     }
 
     img {
-      width: 45px;
+      width: 35px;
+      height: 30px;
       border: none;
       border-radius: 50px;
+      display: block;
+      margin-bottom: 3px;
     }
   }
-
-  .logo {
-    width: 400px;
-    display: flex;
-    align-items: center;
-    font-family: "Shizuru", cursive;
-    color: #fff;
-    font-size: 28px !important;
-    border-bottom: none;
-    margin-bottom: 10px;
-
-  }
 }
 
-@media (max-width: 600px) {
-  .nav {
-    border: solid 1px red;
-    display: inline-block;
-  }
+.acts {
+  width: 700px;
+  display: flex;
+  font-style: bold;
 
-  .nav div {
-    display: none;
-  }
-
-  .header {
-    display: inline;
+  div {
+      height: 10px;
+    &:hover {
+      color: red;
+    }
   }
 }
-
-.active {
-  border-bottom: 3px solid orange;
+.me {
+  width: 150px;
+  &:hover {
+    color: red;
+  }
+}
+.profile {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    color: red;
+  }
+}
+.ads {
+  width: 180px;
+  &:hover {
+    color: red;
+  }
 }

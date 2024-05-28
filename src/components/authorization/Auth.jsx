@@ -15,14 +15,14 @@ function Auth() {
           <h1>Wayads</h1>
         </div>
         <label>
-          <input type="text" placeholder="Email Address" />
+          <input type="text" placeholder="Электронный адрес" />
         </label>
         <label>
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Пароль" />
         </label>
         <div className={styles.btns}>
-          <button className={styles.red} type="button"> Log in</button>
-          <button className={styles.red} type="button" onClick = {handleChange}> sign in</button>
+          <button className={styles.red} type="button"> Войти</button>
+          <button className={styles.red} type="button" onClick = {handleChange}> Регистрация</button>
         </div>
       </form> : <form>
         <div className={styles.segment}>
@@ -41,8 +41,8 @@ function Auth() {
           <input type="password" placeholder="Пароль" />
         </label>
         <div className={styles.btns}>
-          <button className={styles.red} type="button" onClick = {handleOnChange}> Log in</button>
-          <button className={styles.red} type="button"> sign in</button>
+          <button className={styles.red} type="button" onClick = {handleOnChange}> Войти</button>
+          <button className={styles.red} type="button"> Регистрация</button>
         </div>
       </form>}
     </div>

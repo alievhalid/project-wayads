@@ -6,43 +6,32 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.nav}>
-        <NavLink to="/">
-          <div className={styles.logo}>
-            Wayads
-          </div>
-          {/* исправить фон у логотипа */}
-        </NavLink>
-        <NavLink to="/">
-          {({ isActive }) => (
-            <div className={isActive ? styles.active : styles.noActive}>Главная</div>
-          )}
-        </NavLink>
-        <NavLink to="/about">
-          {({ isActive }) => (
-            <div className={isActive ? styles.active : styles.noActive}>о нас</div>
-          )}
-        </NavLink>
-        <NavLink to="/specialists">
-          {({ isActive }) => (
-            <div className={isActive ? styles.active : styles.noActive}><s>Специалисты</s></div>
-          )}
-        </NavLink>
-        <NavLink to="/favorite">
-          {({ isActive }) => (
-            <div className={isActive ? styles.active : styles.noActive}>Избранное</div>
-          )}
-        </NavLink>
-        {/* <div>{<Notifications />}</div> */}
-        <div>Помощь</div>
-        {/* <div>Войти/регистрация</div> */}
-        <div>
-          <NavLink to="/profile">
-            <img
-              src="https://sun9-53.userapi.com/impg/JcJJMQArqwlKOtZbAN441OOUiAC-ZlUcjwPmLQ/DXE069x_MFc.jpg?size=2160x2160&quality=96&sign=8c61b37f493c8fec5a9f032580ed9b81&type=album"
-              alt=""
-            />
+        <div className={styles.acts}>
+          <NavLink to="/">
+            <div>Главная</div>
           </NavLink>
+          <NavLink to="/about">
+            <div>о нас</div>
+          </NavLink>
+          <NavLink to="/specialists">
+            <div><s>Специалисты</s></div>
+          </NavLink>
+          <NavLink to="/favorite">
+            <div>Избранное</div>
+          </NavLink>
+          {/* <div>{<Notifications />}</div> */}
+          <div>Помощь</div>
         </div>
+        <div className={styles.me}>Мои объявления</div>
+          <NavLink to="/profile">
+          <div className={styles.profile}>
+              <img
+                src="https://sun9-53.userapi.com/impg/JcJJMQArqwlKOtZbAN441OOUiAC-ZlUcjwPmLQ/DXE069x_MFc.jpg?size=2160x2160&quality=96&sign=8c61b37f493c8fec5a9f032580ed9b81&type=album"
+                alt=""
+              />
+            <div>Алиев Халид</div>
+            </div>
+          </NavLink>
       </div>
     </div>
   );

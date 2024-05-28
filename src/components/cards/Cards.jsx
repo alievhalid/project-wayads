@@ -5,7 +5,8 @@ import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import AddCard from "./add-card/AddCard";
+import location from "../../images/location.svg"
+import AddButton from "./add-card/AddButton";
 import Filter from "../filter/Filter";
 // import Leaders from "../leaders/Leaders";
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
@@ -35,11 +36,29 @@ function Cards() {
       categories: "Строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "alievhalid95@gmail.com",
       description:
         "есть дом 2-этажный,нужно полностью провести проводку,поставить считок и все что нужно,скажем так работа под ключ",
       id: 2,
+    },
+    {
+      name: "Новый сезон Battleteams уже в игре",
+      firstName: "Халид",
+      lastName: "Алиев",
+      ads: "Реклама",
+      images:
+        "https://community.vkplay.ru/hotbox/ugcimages/2/2/3/JKQ4R9HVkm",
+      categories: "Реклама",
+      address: "mail.ru",
+      data: "играют 700.000",
+      watch: 6124,
+      number: "79633971674",
+      email: "alievhalid95@gmail.com",
+      description:
+        "https://battleteams2.ru/",
+      id: "https://battleteams2.ru/"
     },
     {
       name: "нужно покрасить дом",
@@ -95,7 +114,7 @@ function Cards() {
       name: "залить фундамент",
       price: "20.000",
       images:
-        "http://rufundament.ru/wp-content/uploads/2016/02/opalubka-dlja-fundamenta.jpg",
+        "https://www.bytovki-rf.ru/images/lentochnyj-fundament-v-maloehtazhnoj-zastrojke/2.jpg",
       categories: "строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
@@ -108,7 +127,7 @@ function Cards() {
       name: "залить фундамент",
       price: "20.000",
       images:
-        "http://rufundament.ru/wp-content/uploads/2016/02/opalubka-dlja-fundamenta.jpg",
+        "https://www.bytovki-rf.ru/images/lentochnyj-fundament-v-maloehtazhnoj-zastrojke/2.jpg",
       categories: "строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
@@ -133,19 +152,33 @@ function Cards() {
   ];
   const [loading, setLoading] = useState(false)
   return (
-    <div className={styles.main}>
+    <div>
       {/* <Leaders /> */}
       <div>
         <div className={styles["add-card"]}>
+          <div>
             <div className={styles.search}>
-              <input placeholder="Введите текст." type="text"></input>
+              <input placeholder="Поиск по объявлениям." type="text"></input>
               <button type="submit">найти</button>
+            </div>
+            {/* <span className={styles.loc}>
+              <img src={location} alt="" />
+              Тюмень
+            </span> */}
           </div>
           <Filter />
           <div>
-            <AddCard />
+            <AddButton />
           </div>
         </div>
+        {/* <div className={styles.reduction}>
+          <div className={styles.block1}>Строительство</div>
+          <div className={styles.block2}>Уход</div>
+          <div className={styles.block3}>Рестораны</div>
+          <div className={styles.block4}>Грузчики</div>
+          <div className={styles.block5}>Технологии</div>
+          <div className={styles.block6}>Сбор</div>
+        </div> */}
         <div className={styles.cards}>
           {loading ?
             cards.map((item) => {
@@ -170,7 +203,7 @@ function Cards() {
                     <NavLink onClick={() => window.open(`/card/${card.id}`, "_blank")}>
                       <div className={styles.name}>{card.name}</div>
                     </NavLink>
-                    <div className={styles.price}>{card.price} р</div>
+                    <div className={styles.price}>{card.price}{card.ads}</div>
                     <div className={styles.address}>{card.address}</div>
                     <div className={styles.data}>{card.data}
                       <div className={styles.watchh}><VisibilityIcon fontSize="small" /></div>

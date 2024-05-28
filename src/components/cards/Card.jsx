@@ -7,27 +7,28 @@ import user from "../../images/user.svg";
 import location from "../../images/location.svg";
 import Maps from "./map/Map";
 import Carousel from "./Carousel";
+import VisibilityIcon from '@mui/icons-material/Visibility';
 // import { AiFillStar } from "react-icons/ai";
 function Card() {
   // let level = 42;
-  let arr = 10000;
-  if (arr <= 10) {
-    arr = Array(1).fill(0);
-  } else if (arr <= 20) {
-    arr = Array(2).fill(0);
-  } else if (arr <= 30) {
-    arr = Array(3).fill(0);
-  } else if (arr <= 40) {
-    arr = Array(4).fill(0);
-  } else if (arr <= 50) {
-    arr = Array(5).fill(0);
-  } else {
-    arr = Array(5).fill(0);
-  }
-  const [number, setNumber] = useState(false);
-  const handleChange = () => {
-    setNumber(!number);
-  };
+  // let arr = 10000;
+  // if (arr <= 10) {
+  //   arr = Array(1).fill(0);
+  // } else if (arr <= 20) {
+  //   arr = Array(2).fill(0);
+  // } else if (arr <= 30) {
+  //   arr = Array(3).fill(0);
+  // } else if (arr <= 40) {
+  //   arr = Array(4).fill(0);
+  // } else if (arr <= 50) {
+  //   arr = Array(5).fill(0);
+  // } else {
+  //   arr = Array(5).fill(0);
+  // }
+  // const [number, setNumber] = useState(false);
+  // const handleChange = () => {
+  //   setNumber(!number);
+  // };
   const param = useParams().id;
   const cards = [
     {
@@ -40,6 +41,7 @@ function Card() {
       categories: "Строительство",
       address: "Грозный, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "s7600180@gmail.com",
       description:
@@ -56,6 +58,7 @@ function Card() {
       categories: "Строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "alievhalid95@gmail.com",
       description:
@@ -72,6 +75,7 @@ function Card() {
       categories: "Строительство",
       address: "Гудермес, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "user231414@gmail.com",
       description:
@@ -87,6 +91,7 @@ function Card() {
       categories: "Сборы",
       address: "Аргун, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "qwerty95@gmail.com",
       description:
@@ -102,6 +107,7 @@ function Card() {
       categories: "Строительство",
       address: "Грозный, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "salman9559@gmail.com",
       description:
@@ -118,6 +124,7 @@ function Card() {
       categories: "Уход",
       address: "Грозный, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "s7600180@gmail.com",
       description:
@@ -134,6 +141,7 @@ function Card() {
       categories: "Строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "s7600180@gmail.com",
       description:
@@ -146,10 +154,11 @@ function Card() {
       lastName: "Алиев",
       price: "20 000",
       images:
-        "http://rufundament.ru/wp-content/uploads/2016/02/opalubka-dlja-fundamenta.jpg",
+        "https://www.bytovki-rf.ru/images/lentochnyj-fundament-v-maloehtazhnoj-zastrojke/2.jpg",
       categories: "Строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "s7600180@gmail.com",
       description:
@@ -166,6 +175,7 @@ function Card() {
       categories: "Строительство",
       address: "Автуры, р-н Центральный",
       data: "30 марта в 14:28",
+      watch: 6124,
       number: "79633971674",
       email: "s7600180@gmail.com",
       description:
@@ -227,14 +237,23 @@ function Card() {
               <BiCategoryAlt />
               <span>категория</span>: {card.categories}
             </div>
+            <div className={styles.watches}>
+              <VisibilityIcon />
+              <span>просмотров </span>: {card.watch}
+            </div>
           </div>
         </div>
         <div className={styles["product-info"]}>
           <div className={styles["product-name"]}>{card.name}</div>
           <div className={styles.price}>{card.price} ₽</div>
-          <button onClick={handleChange}>
-            {number ? card.number : "Показать номер"}
-          </button>
+          <div className={styles.buttons}>
+            <button className={styles.btn1}>
+              позвонить +7 99*
+            </button>
+            <button className={styles.btn2}>
+              написать
+            </button>
+          </div>
           <div className={styles.descript}>Описание</div>
           <div className={styles["product-desc"]}>{card.description}</div>
         </div>

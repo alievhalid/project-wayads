@@ -10,7 +10,7 @@ function Favorite() {
           <NavLink to="/card">
             <div className={styles["ads-image"]}>
               <img
-                src="https://36zaborov.ru/wp-content/uploads/2016/04/vysokij-zabor-v-2-5m-na-fundamente-profnastil-matovyj-dvuhstoronnij-1000.jpg"
+                src="https://city-workshop.ru/upload/iblock/41e/41e49cbd6c9e92275ad55fd4a2d038a8.jpg"
                 alt=""
               />
             </div>
@@ -22,11 +22,6 @@ function Favorite() {
             <div className={styles.price}>от 10.000 до 15.000 р</div>
             <div className={styles.address}>Грозный</div>
             <div className={styles.data}>30 марта в 14:28</div>
-            <div className={styles.sends}>
-              <NavLink to="/card">
-                <div className={styles.send}>Откликнуться</div>
-              </NavLink>
-            </div>
           </div>
         </div>
       </div>

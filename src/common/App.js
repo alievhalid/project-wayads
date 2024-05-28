@@ -10,7 +10,7 @@ import Favorite from "../components/favorite/Favorite";
 import SpecialistProfile from "../components/specialists/specialisProfile/SpecialistProfile";
 import Specialists from "../components/specialists/Specialists";
 import About from "../components/about/About";
-// import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
@@ -48,7 +48,7 @@ function App() {
         <Route path="/specialists" element={<Specialists />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      {/* <div className="bottom-right">
+      <div className="bottom-right">
         <div className="tg">
           <FaTelegramPlane />
         </div>
@@ -61,14 +61,15 @@ function App() {
             Мы в Телеграмм
           </a>
         </div>
-      </div> */}
+      </div>
       <div
         className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}
         onClick={scrollToTop}
       >
         &#8593;
       </div>
-      <Footer />
+
+      {/* <MySlider /> */}
     </div>
   );
 }

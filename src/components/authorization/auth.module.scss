@@ -5,7 +5,7 @@ $color-shadow: #BABECC;
 $color-white: #FFF;
 
 .auth {
-
+  margin-top: 100px;
   input,
   select,
   textarea,
@@ -20,6 +20,8 @@ form {
   padding: $ruler;
   width: $ruler*20;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .segment {
@@ -39,12 +41,11 @@ form {
 
 label {
   display: block;
-  margin-bottom: $ruler*1.5;
   width: 100%;
 }
 
 .auth input {
-  margin-right: $ruler/2;
+  margin-right: $ruler*0.5;
   box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
   width: 100%;
   box-sizing: border-box;
@@ -73,18 +74,18 @@ label {
   }
 
   .icon {
-    margin-right: $ruler/2;
+    margin-right: $ruler*0.5;
   }
 
   &.unit {
-    border-radius: $ruler/2;
+    border-radius: $ruler*0.5;
     line-height: 0;
     width: $ruler*3;
     height: $ruler*3;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 $ruler/2;
+    margin: 0 $ruler*0.5;
     font-size: $ruler*1.2;
   }
 

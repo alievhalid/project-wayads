@@ -6,8 +6,8 @@ import styles from "./carousel.module.scss"
 
 const Carousel = () => {
     const images = [
-        'https://rosrealt.ru/pics/dom/dinskaya/2022/02/18/1185569_1b.jpg',
-        'https://rosrealt.ru/pics/dom/dinskaya/2022/02/18/1185569_1b.jpg',
+        "https://st12.stpulscen.ru/images/product/072/066/921_big.jpg",
+        "https://st12.stpulscen.ru/images/product/072/063/785_big.jpg",
         'https://rosrealt.ru/pics/dom/dinskaya/2022/02/18/1185569_1b.jpg',
         // Добавьте ссылки на другие изображения
     ];

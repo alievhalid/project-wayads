@@ -4,7 +4,7 @@ function FIlter() {
   return (
     <div className={styles["filters"]}>
       <div className={styles["filters__group"]}>
-        <label className={styles["filters__label"]} for="filter1">Город</label>
+        <label className={styles["filters__label"]} htmlFor="filter1">Город</label>
         <select className={styles["filters__select"]} id="filter1">
           <option value="option1">Все</option>
           <option value="option1">Москва</option>
@@ -17,7 +17,7 @@ function FIlter() {
         </select>
       </div>
       <div className={styles["filters__group"]}>
-        <label className={styles["filters__label"]} for="filter3">Цена от</label>
+        <label className={styles["filters__label"]} htmlFor="filter3">Цена от</label>
         <select className={styles["filters__select"]} id="filter3">
           <option value="option1">Все</option>
           <option value="option1">-5.000 р</option>
@@ -27,7 +27,7 @@ function FIlter() {
         </select>
       </div>
       <div className={styles["filters__group"]}>
-        <label className={styles["filters__label"]} for="filter2">Категория</label>
+        <label className={styles["filters__label"]} htmlFor="filter2">Категория</label>
         <select className={styles["filters__select"]} id="filter2">
           <option value="option1">Все</option>
           <option value="option1">Строительство</option>
@@ -40,7 +40,7 @@ function FIlter() {
         </select>
       </div>
       <div className={styles["filters__group"]}>
-        <label className={styles["filters__label"]} for="filter3">Вызывные</label>
+        <label className={styles["filters__label"]} htmlFor="filter3">Вызывные</label>
         <select className={styles["filters__select"]} id="filter3">
           <option value="option1">Все</option>
           <option value="option1">Официант</option>

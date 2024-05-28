@@ -29,12 +29,12 @@ function AddCard() {
               <label htmlFor="surname">Цена:</label>
               <input type="number" placeholder='10000' />
               <label>описание:</label>
-              <textarea class="textarea-input" placeholder="Введите текст"></textarea>
+              <textarea class="textarea-input" maxlength="150" placeholder="Введите текст"></textarea>
               <label>Выберите изображения:</label>
               <input type="file" />
               <label for="city-select">Выберите город:</label>
               <select id="city-select">
-              <option value="moscow">Местоположение</option>
+                <option value="moscow">Местоположение</option>
                 <option value="moscow">Грозный</option>
                 <option value="stpetersburg">Шали</option>
                 <option value="novosibirsk">Аргун</option>
@@ -43,11 +43,6 @@ function AddCard() {
               </select>
               <button type="submit">Сохранить</button>
             </form>
-            <div className={styles.typewriter}>
-              <div className={styles.slide}><i></i></div>
-              <div className={styles.paper}></div>
-              <div className={styles.keyboard}></div>
-            </div>
           </div>
         </div>
       )}
